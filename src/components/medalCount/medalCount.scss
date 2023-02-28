@@ -1,0 +1,115 @@
+.page-wrapper  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.medal-count {
+    border-top: 2px solid #777;
+    border-right: 2px solid #777;
+    width: 100%;
+    border-spacing: 0;
+    padding: 20px 0 20px 20px;
+    max-width: 350px;
+    thead tr {
+        height: 50px;
+       
+        th {
+             border-bottom: 3px solid #777;
+
+             &.active {
+                 border-top: 2px solid #777; 
+             }
+        }
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+        }
+
+        .gold {
+            background-color: #f9d032;
+        }
+        .silver {
+            background-color: #99a5ad;
+        }
+        .bronze {
+            background-color: #875124;
+        }
+
+    
+    }
+
+
+    tbody tr {
+        width: 100%;
+        height: 40px;
+
+        td {
+            text-align: center;
+            border-bottom: 1px solid #777;
+
+            .country-detail {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+
+                span {
+                    margin-right: 5px;
+                    min-width: 30px;
+                }
+            }
+
+            .flag {
+                background: url('../../images/flags.png') top left no-repeat;
+                width: 28px;
+                height: 17px;
+                display: inline-flex;
+
+                &.AUT {
+                    background-position: 0 0;
+                }
+
+                &.USA {
+                    background-position: 0 -204px;
+                }
+                &.NOR {
+                    background-position: 0 -136px;
+                }
+                &.RUS {
+                    background-position: 0 -153px;
+                }
+                &.NED {
+                    background-position: 0 -119px;
+                }
+                &.FRA {
+                    background-position: 0 -68px;
+                }
+                &.SWE {
+                    background-position: 0 -187px;
+                }
+                &.ITA {
+                    background-position: 0 -102px;
+                }
+                &.CAN {
+                    background-position: 0 -34px;
+                }
+                &.SUI {
+                    background-position: 0 -170px;
+                }
+                &.BLR {
+                    background-position: 0 -17px;
+                }
+                &.GER {
+                    background-position: 0 -85px;
+                }
+                &.CHN {
+                     background-position: 0 -51px;
+                }
+
+            }
+        }
+    }
+}
